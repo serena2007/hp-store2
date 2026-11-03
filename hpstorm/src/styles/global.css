@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--police);
+  color: var(--couleur-texte);
+  background: #fff;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--couleur-principale-fonce);
+}
+
+:focus-visible {
+  outline: 3px solid var(--couleur-principale);
+  outline-offset: 2px;
+}
+
+/* Boutons communs à toutes les pages (remplacent ceux de Bootstrap) */
+.bouton {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--couleur-principale-fonce);
+  border-radius: var(--rayon);
+  background: var(--couleur-principale-fonce);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bouton:hover {
+  background: var(--couleur-principale-sombre);
+  border-color: var(--couleur-principale-sombre);
+}
+
+.bouton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.bouton-secondaire {
+  background: #fff;
+  color: var(--couleur-principale-fonce);
+}
+
+.bouton-secondaire:hover {
+  background: var(--couleur-fond-clair);
+  border-color: var(--couleur-principale-fonce);
+}
+
+.visuellement-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

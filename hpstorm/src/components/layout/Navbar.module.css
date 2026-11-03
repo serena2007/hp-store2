@@ -1,0 +1,32 @@
+.navbar {
+  background: var(--couleur-fond-clair);
+  border-bottom: 1px solid var(--couleur-bordure);
+}
+
+.contenu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--couleur-texte);
+  text-decoration: none;
+}
+
+.panier {
+  margin-left: auto;
+}
+
+.compteur {
+  background: var(--couleur-principale-fonce);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  font-size: 0.85rem;
+}
