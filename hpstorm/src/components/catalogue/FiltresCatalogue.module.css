@@ -1,0 +1,72 @@
+.boutonFiltres {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.panneau {
+  display: none;
+  padding: 1rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: var(--rayon);
+  background: var(--couleur-fond-clair);
+}
+
+.ouvert {
+  display: block;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.champ label,
+.prix legend {
+  font-weight: 600;
+}
+
+.panneau input[type="search"],
+.panneau input[type="number"],
+.panneau select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 0.375rem;
+  font: inherit;
+  background: #fff;
+}
+
+.prix {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+}
+
+.deuxColonnes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.case {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.panneau button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .boutonFiltres {
+    display: none;
+  }
+
+  .panneau {
+    display: block;
+  }
+}

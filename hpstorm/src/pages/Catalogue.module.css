@@ -1,0 +1,80 @@
+.mise {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.barre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.compteur {
+  margin: 0;
+}
+
+.tri {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tri select {
+  padding: 0.5rem;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 0.375rem;
+  font: inherit;
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.vide {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.videTitre {
+  font-size: 1.2rem;
+}
+
+.erreur {
+  padding: 1rem;
+  border-radius: var(--rayon);
+  background: #f8d7da;
+  color: #58151c;
+}
+
+.notification {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+}
+
+.notification p {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--rayon);
+  background: var(--couleur-texte);
+  color: #fff;
+  box-shadow: var(--ombre);
+}
+
+.notification a {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .mise {
+    grid-template-columns: 260px 1fr;
+    align-items: start;
+  }
+}

@@ -1,1 +1,49 @@
-[]
+[
+  {
+    "id": 1,
+    "nom": "HP OmniBook 3 15",
+    "reference": "OB3-15-A1",
+    "categorie": "pc-portables",
+    "usage": "maison",
+    "prix": 649.99,
+    "stock": 12,
+    "image": "omnibook-3-15.webp",
+    "images": ["omnibook-3-15.webp", "omnibook-3-15-2.webp"],
+    "description": "Un ordinateur portable fin et polyvalent pour le travail et les loisirs.",
+    "caracteristiques": {
+      "processeur": "Intel Core i5",
+      "ram": "16 Go",
+      "stockage": "512 Go SSD",
+      "ecran": "15,6 pouces"
+    }
+  },
+  {
+    "id": 2,
+    "nom": "HP Laser 107w",
+    "reference": "L107W",
+    "categorie": "imprimantes",
+    "usage": "pro",
+    "prix": 129.9,
+    "stock": 0,
+    "image": "laser-107w.webp",
+    "description": "Imprimante laser monochrome compacte avec Wi-Fi.",
+    "caracteristiques": {
+      "technologie": "Laser monochrome",
+      "connectique": "Wi-Fi, USB"
+    }
+  },
+  {
+    "id": 3,
+    "nom": "Souris HP 230 sans fil",
+    "reference": "HP230",
+    "categorie": "accessoires",
+    "usage": "maison",
+    "prix": 19.99,
+    "stock": 3,
+    "image": "souris-hp-230.webp",
+    "caracteristiques": {
+      "connectique": "Sans fil 2,4 GHz",
+      "couleur": "Noir"
+    }
+  }
+]
